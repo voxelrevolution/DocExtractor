@@ -52,10 +52,10 @@ When context resets, read in this order:
 │           │   │               └── tasks/  ← T0X.Y.Z_JD-NNN_Name.md
 │           │   └── summaries/          ← Epic-level docs (DoD, executive summary)
 │           │
-│           ├── E02_IngestionLibrary/   ← Same structure
-│           ├── E03_InvoiceExtraction/  ← Same structure
-│           ├── E04_EntityResolution/   ← Same structure
-│           └── E05_CopilotInterface/   ← Same structure
+│           ├── E02_IngestionLibrary/        ← Same structure
+│           ├── E03_InvoiceExtractionPipeline/ ← Same structure
+│           ├── E04_CopilotInterface/        ← Same structure
+│           └── E05_ProductionReadiness/     ← Same structure
 │
 ├── evidence/                            ← DEPRECATED: Evidence now lives co-located with requirements
 │
@@ -121,8 +121,10 @@ When context resets, read in this order:
 ## Current Project Status
 
 **E01 (Core Foundation):** ✅ COMPLETE (100%)  
-**E02 (Ingestion + Library):** 🚀 PHASE 1 EXECUTION (4 teams active; critical path 18h)  
-**E03–E05:** ⏳ Queued (start after E02 gate)
+**E02 (Ingestion + Library):** ✅ COMPLETE (all tasks + QC sign-offs)  
+**E03 (Invoice Extraction Pipeline):** ✅ COMPLETE (surrogate QC satisfied)  
+**E04 (Copilot Interface):** 🟡 IN PROGRESS (tests passing; UI/UX iteration ongoing)  
+**E05 (Production Readiness):** ⏳ BLOCKED (awaiting E04 completion)
 
 → See [PROJECT_STATUS_DASHBOARD.md](PROJECT_STATUS_DASHBOARD.md) for detailed status.
 
@@ -211,6 +213,15 @@ Every task is assigned to a specific Job Description (JD). The JD is embedded in
 - Batch mode: ingest/process many documents
 - Focused mode: view one document with batch/corpus awareness
 - Corpus mode: query historic documents tied to the same client/project
+
+## Python Environment (Reproducible)
+
+The repo does not store the virtual environment. Recreate it locally using:
+
+- Create venv: `python -m venv .venv`
+- Activate venv and install deps: `pip install -r requirements.txt`
+
+The `requirements.txt` file is the canonical dependency list.
 
 ## Model & Runtime
 - Local model runtime: Ollama
