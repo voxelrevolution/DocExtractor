@@ -1,0 +1,13 @@
+{
+  "name": "invoice-benchmark",
+  "version": "1.0",
+  "documents": [
+    {
+      "extraction_id": "doc-1",
+      "filename": "invoice_001.pdf",
+      "source_type": "digital_pdf",
+      "vendor": "ACME",
+      "metadata": {"note": "sample"}
+    }
+  ]
+}

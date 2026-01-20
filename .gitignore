@@ -1,0 +1,20 @@
+# Local-only samples and generated artifacts
+/data/local_samples/
+/data/sample_invoices/
+
+# Local env files
+.env
+ui/.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+ui/node_modules/
+
+# Logs
+*.log
+/logs/

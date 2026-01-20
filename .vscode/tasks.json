@@ -1,0 +1,53 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "UI: test (vitest)",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor/ui && npm test",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "UI: test (vitest run)",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor/ui && npm test -- --run",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Evidence: pytest full -> file",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor && /Reserved/DocExtractor/.venv/bin/python -m pytest -q 2>&1 | tee /Reserved/DocExtractor/evidence/E04/test_runs/2026-01-19_pytest_full.txt",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Evidence: ui vitest run -> file",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor/ui && npm test -- --run 2>&1 | tee /Reserved/DocExtractor/evidence/E04/test_runs/2026-01-19_ui_vitest_run.txt",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "Evidence: governance audit -> file",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor && /Reserved/DocExtractor/.venv/bin/python scripts/governance_audit.py 2>&1 | tee /Reserved/DocExtractor/evidence/E04/test_runs/2026-01-19_governance_audit.txt",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "DocExtractor: git status (porcelain)",
+			"type": "shell",
+			"command": "cd /Reserved/DocExtractor && git status --porcelain && git rev-parse --show-toplevel",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}

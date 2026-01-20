@@ -1,0 +1,10 @@
+ACME Supplies
+Invoice # INV-1009
+Invoice Date: 01/05/2026
+
+Widget A    2    10.00    20.00
+Widget B    1    5.00     5.00
+
+Subtotal: 25.00
+Tax: 2.50
+Total: 27.50

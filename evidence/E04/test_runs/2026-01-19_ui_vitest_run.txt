@@ -1,0 +1,18 @@
+
+> doc-extractor-ui@0.1.0 test
+> vitest --run
+
+
+ RUN  v2.1.9 /Reserved/DocExtractor/ui
+
+ ✓ src/components/EvidencePanel.test.tsx (2 tests) 38ms
+ ✓ src/components/ExportPanel.test.tsx (2 tests) 198ms
+ ✓ src/components/FieldReviewForm.test.tsx (2 tests) 251ms
+ ✓ src/components/CopilotChat.test.tsx (4 tests) 392ms
+ ✓ src/App.test.tsx (4 tests) 390ms
+
+ Test Files  5 passed (5)
+      Tests  14 passed (14)
+   Start at  02:17:57
+   Duration  1.65s (transform 422ms, setup 396ms, collect 1.56s, tests 1.27s, environment 2.22s, prepare 488ms)
+

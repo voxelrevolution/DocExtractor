@@ -1,0 +1,3 @@
+INVOICE
+Vendor: ACME
+Total: $10.00
