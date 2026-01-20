@@ -9,9 +9,10 @@
 
 ## Quick Status
 
-- Technical debt (non-blocking): UI screenshots captured but not mapped/linked to evidence yet. See `burn-pile/screenshot_inbox/2026-01-19/`.
+- Screenshots requirement waived by sponsor (2026-01-20). No screenshot mapping required for E04.
 - QC validation updated (2026-01-20): Ollama tags verified + manual `/api/chat` E2E with citations recorded.
 - LLM extraction tuning (2026-01-20): added warmup + telemetry; mini schema + line cap enabled LLM path with improved latency.
+- UI ingest UX update (2026-01-20): batch ingest panel restyled; progress/ETA + cancel added.
 
 ## Validation (2026-01-20)
 
@@ -29,12 +30,12 @@
 | Deliverable | Status | Notes |
 |---|---|---|
 | D04.1 Desktop UI Layout & Navigation | 🟡 In Progress | UI shell scaffolding in ui/ |
-| D04.2 Document Viewer | 🟡 In Progress | PDF preview wired; evidence screenshots pending mapping |
+| D04.2 Document Viewer | 🟡 In Progress | PDF preview wired |
 | D04.3 Field Review & Correction Interface | 🟡 In Progress | Review form UI started in ui/ |
-| D04.4 Copilot Chat Component | 🟡 In Progress | Local-only guard added; evidence screenshots pending mapping |
+| D04.4 Copilot Chat Component | 🟡 In Progress | Local-only guard added |
 | D04.5 Evidence/Citation Display | 🟡 In Progress | Evidence panel added to UI |
 | D04.6 Export & Reporting | 🟡 In Progress | Export UI wired with client-scoped export |
-| D04.7 Search & Filtering | 🟡 In Progress | Search/filter UI added; empty-results test added; screenshots pending mapping |
+| D04.7 Search & Filtering | 🟡 In Progress | Search/filter UI added; empty-results test added |
 
 ---
 
